@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/*样式重置*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    /*设置所有盒子都是以border-box 以边框开始计算 ，使用的是流式布局*/
+    -webkit-box-sizing: border-box; /*兼容主流浏览器-webkit 内核*/
+    box-sizing: border-box;
+    /*清除移动端默认的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    font-size: 60px;
+}
+
+body {
+    color: #333;
+    font-family: "microsoft yahei", "sans-serif";
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+input, textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    /*清除移动端输入框的默认样式*/
+    -webkit-appearance: none;
+}
+
+p {
+    text-align: justify;
+}
+
+/*css common 公用*/
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.clearfix ::before, .clearfix::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+
+/*活动页面样式开始*/
+body, html{
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+.layout {
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;
+
+    margin: 0 auto;
+}
+
+.layout .headimg {
+    width: 100%;
+    display: block;
+}
+.container{
+    padding: 0 13px 0 13px;
+    font-size: 0.23333rem;
+    background: #f8dc21 url("../images-wt/down-bg.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.inside {
+    background-color: #fff;
+    padding-top: 10px;
+    border-radius: 2px;
+}
+.container .wt-title{
+    display: inline-block;
+    font-size:14px;
+    width: 1.42rem;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 0.5em;
+    background: url("../images-wt/short-title2.png") no-repeat;
+    background-size: 1.42rem 24px;
+    background-position: top right;
+    color: #fff;
+}
+.container .wt-text{
+    font-size: 14px;
+    line-height: 28px;
+    vertical-align: middle;
+    text-indent: 0.21rem;
+
+}
+.container .text-s {
+    text-indent: 0.1rem;
+}
+.container .wt-title-l{
+    width: 1.86rem;
+    background: url("../images-wt/title-long.png") no-repeat;
+    background-size:1.86rem 30px;
+}
+/*立即开户按钮*/
+.container .button {
+    width: 100%;
+    margin: 20px 0;
+}
+.container .login {
+    display: block;
+}
+
+.container .login img{
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+}
+/*文字部分*/
+.container .up{
+    padding: 5px 0.31rem 0 0.21rem;
+}
+.up p{
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+/*蓝色字体*/
+.up .blue,
+.up .blue:hover,
+.up .blue:visited,
+.up .blue:link,
+.up .blue:active {
+    color:#1042BD;
+}
+/*英文字符换行*/
+.up .wrap{
+    white-space: normal;
+    word-break: break-all;
+}
+/*foot图片和文字*/
+footer{
+    margin-top: 0.2rem;
+}
+.up .footer-img img{
+    margin:0 auto ;
+    width: 1.6rem;
+    display: block;
+}
+
+.up .footer-text{
+    font-size: 0.2rem;
+    color:#8E8E8E;
+    text-align: center;
+    line-height: 0.2rem;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (min-width: 375px){
+    .container .login img {
+        width: 140px;
+
+}}
