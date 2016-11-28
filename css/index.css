@@ -144,7 +144,14 @@ body, html{
 }
 .up p{
     line-height: 22px;
+    margin: 2px 0;
     vertical-align: middle;
+    font-size: 0.233333rem;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.up p.p1{
+    text-indent: 1.6em;
 }
 
 /*蓝色字体*/
